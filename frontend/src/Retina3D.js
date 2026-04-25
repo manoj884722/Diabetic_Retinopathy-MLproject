@@ -48,7 +48,7 @@ function Retina({ lesions, severity }) {
 
 export default function Retina3D({ severity, lesions }) {
   return (
-    <div style={{ width: "400px", height: "400px", margin: "auto" }}>
+    <div style={{ width: "100%", height: "100%", minHeight: "400px", display: "flex", justifyContent: "center", alignItems: "center" }}>
       <Canvas camera={{ position: [0, 3, 5] }}>
         <ambientLight intensity={1.2} />
         <directionalLight position={[5, 5, 5]} intensity={2} />
